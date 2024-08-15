@@ -52,7 +52,11 @@ export default function TldrawComponent() {
           const ids: TLShapeId[] = [];
           const textId1s: TLShapeId[] = [];
           const textId2s: TLShapeId[] = [];
-            const q = 1300 / (value-1);
+          let q=0;
+          if(value==1)
+            q = 1500/2;
+          else
+            q = 1300 / (value-1);
 
             for (let i = 0; i < value; i++) {
               const textId1 = createShapeId();
