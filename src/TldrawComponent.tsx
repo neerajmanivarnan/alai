@@ -45,7 +45,7 @@ export default function TldrawComponent() {
       key={value}
         hideUi={true}
         onMount={(editor) => {
-          if (!editor) return; // Ensure editor is defined
+          if (!editor) return;
 
           const horizontal = createShapeId();
           let s = 100;
